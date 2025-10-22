@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #1c117d ,#262c6e);
+  color: #ffeaea;
+  overflow-x: hidden;
+  position: relative;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* الحاوية العامة */
+.container {
+  max-width: 1000px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* العنوان */
+h1 {
+  font-size: 3em;
+  color: #fff8f8;
+  text-align: center;
+  border-bottom: 2px solid #ffd1d1;
+  display: inline-block;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite alternate;
+  margin: 20px auto 40px auto;
+}
+
+@keyframes typing {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+@keyframes blink {
+  from, to {border-color: transparent;}
+  50% {border-color: #ffd1d1;}
+}
+
+/* الشبكة */
+.subject-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* الصناديق */
+.subject-box {
+  background: rgba(255,255,255,0.05);
+  border: 2px solid #060230;
+  padding: 25px;
+  border-radius: 20px;
+  width: 260px;
+  cursor: pointer;
+  text-align: center; /* توسيط كل شيء داخل الصندوق */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* توسيط أفقي */
+}
+
+.subject-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.4);
+}
+
+.subject-box i {
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: #ffbdbd;
+}
+
+.subject-box strong {
+  display: block;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #ffd1d1;
+}
+
+.subject-box p {
+  font-size: 1.1em;
+  color: #ffdede;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.subject-box ol, .subject-box ul {
+  padding-right: 0;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.subject-box li {
+  margin-bottom: 5px;
+}
+
+.subject-box a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+
+.subject-box a:hover {
+  color: #ffbdbd;
+  text-decoration: underline;
+}
+
+/* الزر */
+.back-btn {
+  display: inline-block;
+  margin-top: 50px;
+  background: linear-gradient(90deg, #02013f, #0f024e);
+  color: #fff;
+  padding: 15px 45px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.6);
+  background: linear-gradient(90deg, #00052a, #160754);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Projects</h1>
+
+  <div class="subject-grid">
+
+    <div class="subject-box">
+      <i class="fas fa-globe-americas"></i>
+      <strong>بحث عن المريخ قمت بعمله في أسبوع الفضاء</strong>
+      <li><a href="C:\Users\nawra\Documents\مجلد المواد -أول ثانوي\موقعي\المريخ -نوراء الحمالي.pdf" target="_blank">رابط البحث</a></li>
+    </div>
+
+    <div class="subject-box">
+      <i class="fas fa-pen-fancy"></i>
+      <strong>منصة كتابة</strong>
+      <p>الكتابة هي عالمي الذي أستطيع التعبير فيه عن ذاتي وأفكاري، ولهذا بدأت الكتابة في منصة كتابة ويمكنكم قراءة ما كتبت من الرابط التالي:</p>
+      <li><a href="https://kitabh.com/feed/view/reading" target="_blank">الرابط</a></li>
+    </div>
+
+    <div class="subject-box">
+      <i class="fas fa-atom"></i>
+      <strong>STEM</strong>
+      <p>هو المشروع التكاملي لمواد الفصل الدراسي الأول</p>
+      <p>لا توجد مستندات بعد</p>
+    </div>
+
+    <div class="subject-box">
+      <i class="fas fa-award"></i>
+      <strong>برامج موهبة</strong>
+      <p>شاركت في عدة برامج تابعة لمؤسسة موهبة، وهذه أبرز المشاريع التي عملت عليها بالإضافة إلى جميع الشهادات:</p>
+      <ol>
+        <li><a href="C:\Users\nawra\Documents\مجلد المواد -أول ثانوي\موقعي\الفيزياء بين النظرية والتطبيق.pdf" target="_blank">الفيزياء بين النظرية والتطبيق</a></li>
+        <li><a href="C:\Users\nawra\Documents\مجلد المواد -أول ثانوي\موقعي\شهاداتي من موهبة.pdf" target="_blank">الشهادات</a></li>
+      </ol>
+    </div>
+
+  </div>
+
+  <a href="mydata.html" class="back-btn">Back to Home</a>
+</div>
+
+</body>
+</html>
+
+
+

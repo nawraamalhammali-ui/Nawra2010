@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Data</title>
+<!-- استيراد خط Poppins من Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #00003e; /* كحلي */
+        color: #fff;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    /* ثلج متساقط */
+    .snowflake {
+        position: fixed;
+        top: -10px;
+        z-index: 9999;
+        user-select: none;
+        pointer-events: none;
+        color: #fff;
+        font-size: 1em;
+        opacity: 0.8;
+        animation-name: fall;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes fall {
+        0% {transform: translateY(0) rotate(0deg);}
+        100% {transform: translateY(100vh) rotate(360deg);}
+    }
+
+    /* الصفحة الرئيسية */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 40px;
+        font-weight: 600;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .btn {
+        background-color: #1c117d; /* قريب من الخلفية */
+        border: 2px solid #01041f;
+        color: #fff;
+        padding: 20px 40px;
+        font-size: 1.1em;
+        cursor: pointer;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    .btn:hover {
+        background-color: #240088;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>My Portfolio</h1>
+    <div class="buttons">
+        <a href="index.html" class="btn">About Me</a>
+        <a href="achievements.html" class="btn">Academic Achievements</a>
+        <a href="subjects.html" class="btn">Subjects</a>
+        <a href="projects.html" class="btn">Projects & Works</a>
+        <a href="writings.html" class="btn">My Writings</a>
+    </div>
+</div>
+
+<!-- ثلج -->
+<script>
+    const snowflakes = [];
+    for(let i=0;i<50;i++){
+        const span = document.createElement('span');
+        span.className = 'snowflake';
+        span.innerText = '❄';
+        span.style.left = Math.random() * window.innerWidth + 'px';
+        span.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        span.style.animationDuration = (Math.random() * 10 + 5) + 's';
+        span.style.opacity = Math.random();
+        document.body.appendChild(span);
+        snowflakes.push(span);
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

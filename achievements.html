@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Achievements</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Cairo', Arial, sans-serif;
+        background: linear-gradient(135deg, #1c117d ,#262c6e);
+        color: #ffeaea;
+        overflow-x: hidden;
+        direction: rtl;
+        text-align: right; /* النص كله على اليمين */
+    }
+
+    /*  Snowflakes */
+    .snowflake {
+        position: fixed;
+        top: -10px;
+        z-index: 9999;
+        user-select: none;
+        pointer-events: none;
+        color: #fff;
+        opacity: 0.8;
+        animation: fall linear infinite;
+        text-shadow: 0 0 5px #fff;
+    }
+
+    @keyframes fall {
+        0% {transform: translateY(0) rotate(0deg);}
+        100% {transform: translateY(100vh) rotate(360deg);}
+    }
+
+    /* Container */
+    .container {
+        max-width: 900px;
+        margin: 100px auto;
+        padding: 40px;
+        text-align: right;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px rgba(255,255,255,0.15);
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(30px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    /*  Title typing effect (من اليمين) */
+    h1 {
+        font-size: 3em;
+        color: #fff8f8;
+        text-align: center;
+        border-bottom: 2px solid #ffd1d1;
+        display: inline-block;
+        padding-bottom: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        direction: rtl;
+        animation: typing-rtl 4s steps(30) 1s forwards, blink 0.75s step-end infinite alternate;
+        margin: 0 auto 30px auto;
+    }
+
+    @keyframes typing-rtl {
+        from {width: 0;}
+        to {width: 100%;}
+    }
+
+    @keyframes blink {
+        from, to {border-color: transparent;}
+        50% {border-color: #ffd1d1;}
+    }
+
+    p {
+        font-size: 1.3em;
+        line-height: 1.8em;
+        color: #c5a3ba; 
+    }
+
+    ul {
+        list-style: "★ ";
+        padding-right: 25px;
+        margin-top: 20px;
+    }
+
+    li {
+        font-size: 1.3em;
+        line-height: 1.8em;
+        color: #ffdede; 
+        margin-bottom: 10px;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    li:hover {
+        transform: translateX(-8px);
+        color: #fff4f4;
+    }
+
+    /*  Back button */
+    .back-btn {
+        display: inline-block;
+        margin-top: 50px;
+        background: linear-gradient(90deg, #262c6e, #170169);
+        color: #fff;
+        padding: 15px 45px;
+        font-size: 1.1em;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 15px rgba(255,255,255,0.2);
+        text-align: center;
+    }
+
+    .back-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(255,255,255,0.6);
+        background: linear-gradient(90deg, #20016d, #0e0246);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Academic Achievements</h1>
+    <p>لقد حصلت(ولله الحمد) على الكثير من الإنجازات خلال مسيرتي التعليمية وهذه أبرزها:</p>
+    <ul>
+        <li>المشاركة في تحدي القراءة العربي لمدة 3 سنوات، والتأهل على مستوى المنطقة التعليمية</li>
+        <li>الحصول على المركز الأول في مسابقة القراءة السريعة لعام 1438 هـ بالمدرسة الابتدائية السابعة بالقطيف</li>
+        <li>تفعيل برنامج "كن مسعفًا" في عام 1445 هـ بالمدرسة المتوسطة السادسة بالقطيف</li>
+        <li>تحقيق المركز الأول في مسابقة "نقطة تميز" لعام 1445 هـ بالمدرسة المتوسطة السادسة بالقطيف</li>
+        <li>الانضمام إلى عدة برامج من مؤسسة موهبة في مجالات علمية ومهارية متنوعة</li>
+        <li>كاتبة مبتدئة في منصة كتابة، ومجتمع 100 يوم من الكتابة</li>
+    </ul>
+    <div style="text-align:center;">
+        <a href="mydata.html" class="back-btn">back to home</a>
+    </div>
+</div>
+</script>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me|من أنا؟</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', Arial, sans-serif;
+        background: linear-gradient(135deg, #1c117d, #262c6e);
+        color: #f8f6f6; /* لون فاتح مائل للوردي */
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    /* ثلج متساقط */
+    .snowflake {
+        position: fixed;
+        top: -10px;
+        z-index: 9999;
+        user-select: none;
+        pointer-events: none;
+        color: #fff;
+        opacity: 0.8;
+        animation: fall linear infinite;
+        text-shadow: 0 0 5px #fff;
+    }
+    @keyframes fall {
+        0% {transform: translateY(0) rotate(0deg);}
+        100% {transform: translateY(100vh) rotate(360deg);}
+    }
+
+    /* الحاوية */
+    .container {
+        max-width: 850px;
+        margin: 100px auto;
+        padding: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 0 0 25px rgba(255,255,255,0.2);
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(30px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #ffd1d1;
+        display: inline-block;
+        padding-bottom: 10px;
+        animation: typing 4s steps(20) 1 normal both;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #fff8f8;
+    }
+
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    p {
+        font-size: 1.4em;
+        line-height: 1.8em;
+        margin-bottom: 20px;
+        color: #ffebeb;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-top: 40px;
+        background: linear-gradient(90deg, #1f1072, #0e0246);
+        border: none;
+        color: #fff;
+        padding: 15px 45px;
+        font-size: 1.2em;
+        cursor: pointer;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .back-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(255,255,255,0.7);
+        background: linear-gradient(90deg, #041334, #19003c);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>About Me</h1>
+    <p>
+مرحباً بالجميع، اسمي نوراء محمد الحمالي، ادرس في مدرس الموهوبين التقنية الثانوية بالمنطقة الشرقية، يسعدني اليوم أن أقدّم لكم موقعي الشخصي الذي برمجته بالاعتماد على ما تعلمته خلال دراستي ،مع إضافة لمساتي الخاصة ليعكس شخصيتي ويعبّر عن أسلوبي.يضم هذا الموقع إنجازاتي الأكاديمية ومشاركاتي المختلفة التي كانت جزءًا من رحلتي التعليمية، والتي أسعى من خلالها إلى تطوير مهاراتي وتحقيق طموحاتي المستقبلية
+    </p>
+     <a href="mydata.html" class="back-btn"> Back to Home</a>
+
+
+<!-- ثلج -->
+<script>
+    for(let i = 0; i < 50; i++){
+        const span = document.createElement('span');
+        span.className = 'snowflake';
+        span.innerText = '❄';
+        span.style.left = Math.random() * window.innerWidth + 'px';
+        span.style.fontSize = (Math.random() * 18 + 8) + 'px';
+        span.style.animationDuration = (Math.random() * 10 + 5) + 's';
+        span.style.opacity = Math.random();
+        document.body.appendChild(span);
+    }
+</script>
+
+</body>
+</html>
+
+

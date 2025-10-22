@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writings</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Cairo', Arial, sans-serif;
+  background: linear-gradient(135deg, #1c117d, #262c6e);
+  color: #ffeaea;
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+/* الحاوية العامة */
+.container {
+  max-width: 850px;
+  margin: 100px auto;
+  padding: 40px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* العنوان */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.title i {
+  font-size: 2em;
+  color: #ffd1d1;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-8px); }
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #fff8f8;
+  border-bottom: 2px solid #ffd1d1;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+@keyframes blink {
+  from, to {border-color: transparent;}
+  50% {border-color: #ffd1d1;}
+}
+
+/* صندوق النص */
+.text-box {
+  background-color: rgba(4, 13, 64, 0.9);
+  border: 2px solid #0b0950;
+  border-radius: 25px;
+  padding: 35px;
+  line-height: 2;
+  font-size: 1.3em;
+  text-align: justify;
+  color: #fff0f0;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+  transition: all 0.4s ease;
+}
+
+.text-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+}
+
+/* زر العودة */
+.back-btn {
+  display: inline-block;
+  margin-top: 40px;
+  background: linear-gradient(90deg, #03104b, #09035c);
+  color: #fff;
+  padding: 15px 45px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+  background: linear-gradient(90deg, #0b0157, #18065c);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="title">
+    <i class="fas fa-feather-alt"></i> <!-- أيقونة القلم -->
+    <h1>Writings</h1>
+  </div>
+
+  <div class="text-box">
+    <p>
+      منذ صغري وأنا أجد في الكتابة مساحة خاصة تعبّر عن أفكاري ومشاعري بصدق. بدأت كهواية بسيطة، ثم أصبحت وسيلتي للتعبير والتأمل.
+      ولتعزيز مهاراتي وتنمية أسلوبي في هذا المجال، التحقت ببرنامج <strong>موهبة المهاري في الكتابة الإبداعية</strong>،
+      الذي أتاح لي الفرصة لتطوير قدرتي على صياغة الأفكار بأسلوب فني مؤثر، يجمع بين الإبداع والدقة في التعبير.
+    </p>
+  </div>
+
+  <a href="mydata.html" class="back-btn">Back to Home</a>
+</div>
+
+</body>
+</html>
+
+
+
+
